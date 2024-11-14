@@ -1,0 +1,46 @@
+#services {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  #services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .services-container {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .service-item {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .service-item:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  @media (min-width: 1024px) {
+    .services-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .services-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .services-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
